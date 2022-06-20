@@ -113,7 +113,7 @@ def compute_feature_importance(voting_clf, weights):
 
 df3 = pd.DataFrame(columns = ["Feature","Feature Importance"])
 df3["Feature"] = X_train0.columns
-df3["Feature Importance"] = compute_feature_importance(eclf1,[1,2,1])
+df3["Feature Importance"] = compute_feature_importance(eclf1,[1,1,1])
 df3 = df3.sort_values("Feature Importance",ascending = False)
 
 axis_fs = 18 #fontsize
