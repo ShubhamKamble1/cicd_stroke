@@ -95,7 +95,7 @@ sensitivity = tp / (tp + fn)
 ax = sns.heatmap(cm, annot = True, fmt="d")
 ax.set_title("Confusion Metrics", fontsize = 22)
 plt.tight_layout()
-plt.savefig("confusion_metrics.jpg",dpi=120)
+plt.savefig("confusion_metrics.jpg",dpi=130)
 plt.close()
 
 def compute_feature_importance(voting_clf, weights):
