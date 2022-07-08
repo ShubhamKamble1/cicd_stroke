@@ -15,7 +15,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import recall_score, confusion_matrix, precision_score, f1_score, classification_report
 from sklearn.preprocessing import StandardScaler
 
-df = pd.read_csv("data_processed.csv")
+df = pd.read_csv("data_processed.csv", index_col=False)
 
 X_sm = df.drop(columns = ['stroke'])
 y_sm = df['stroke']
