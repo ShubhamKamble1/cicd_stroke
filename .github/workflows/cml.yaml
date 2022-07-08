@@ -21,8 +21,6 @@ jobs:
         run: |
           echo "Model Metrics" > report.md
           cat metrics.txt >> report.md
-          
           cml publish feature_importance.jpg --md --title "Feature Importance" >> report.md
           cml publish confusion_metrics.jpg --md --title "Confusion Metrics" >> report.md
-          
           cml send-comment report.md
