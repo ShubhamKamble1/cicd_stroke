@@ -199,4 +199,4 @@ X_sm , y_sm = sm.fit_resample(X,y)
 
 df1 = pd.concat([X_sm, y_sm], axis=1)
 
-df1.to_csv("data_processed.csv")
+df1.to_csv("data_processed.csv", index=False)
